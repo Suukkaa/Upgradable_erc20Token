@@ -22,7 +22,7 @@ async function main() {
 
   const TokenV1 = await upgrades.deployProxy(MyTokenV1, { kind: "uups" });
   // const TokenV2 = await upgrades.upgradeProxy(
-  //   "0x106F869ee8Aa1D30f0c3449D20A33bfB1C485F9f",
+  //   "0x0D113e8DE98e4a92faaB361e8EfeedceE41296c7",
   //   MyTokenV2
   // );
 
@@ -30,8 +30,8 @@ async function main() {
   // const TokenV1 = await MyTokenV1.deploy();
   // await TokenV1.deployed();
 
-  console.log("MyTokenV1 deployed to:", TokenV1.address);
-  // console.log("MyTokenV1 to MyTokenV2:", TokenV2.address);
+  // console.log("MyTokenV1 deployed to:", TokenV1.address);
+  console.log("MyTokenV1 to MyTokenV2:", TokenV2.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
